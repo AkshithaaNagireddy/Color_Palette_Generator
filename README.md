@@ -11,6 +11,10 @@ A modern, responsive web-based application built with **HTML5, CSS3, and JavaScr
 - **💎 Glassmorphism UI**: Designed with modern frosted-glass cards (`backdrop-filter: blur`), subtle ambient background blur orbs, and neon gradient accents.
 - **📱 Responsive Layout**: Seamlessly adapts from desktop row layouts to stacked mobile card views.
 
+---
+
+Deployment - https://akshithaanagireddy.github.io/Color_Palette_Generator/
+
 ## 📁 File Structure
 
 ```text
