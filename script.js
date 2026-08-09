@@ -6,8 +6,6 @@ let colorsState = Array(NUM_COLORS).fill(null).map(() => ({
 
 const paletteContainer = document.getElementById('palette-container');
 const toast = document.getElementById('toast');
-
-// Generate random HEX color code
 function getRandomHex() {
   const chars = '0123456789ABCDEF';
   let hex = '#';
@@ -17,7 +15,6 @@ function getRandomHex() {
   return hex;
 }
 
-// Generate new palette
 function generatePalette() {
   colorsState = colorsState.map(item => {
     if (item.locked) return item;
@@ -26,13 +23,11 @@ function generatePalette() {
   renderPalette();
 }
 
-// Toggle lock status
 function toggleLock(index) {
   colorsState[index].locked = !colorsState[index].locked;
   renderPalette();
 }
 
-// Copy HEX code to clipboard
 function copyToClipboard(hex) {
   navigator.clipboard.writeText(hex).then(() => {
     toast.textContent = `Copied ${hex} to clipboard!`;
@@ -41,7 +36,6 @@ function copyToClipboard(hex) {
   });
 }
 
-// Render palette cards to DOM
 function renderPalette() {
   paletteContainer.innerHTML = '';
   colorsState.forEach((item, index) => {
@@ -63,8 +57,6 @@ function renderPalette() {
     paletteContainer.appendChild(card);
   });
 }
-
-// Event Listeners
 document.getElementById('generate-btn').addEventListener('click', generatePalette);
 
 document.addEventListener('keydown', (e) => {
