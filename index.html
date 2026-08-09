@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Color Palette Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background decorative blur elements -->
+  <div class="glass-bg-orb orb-1"></div>
+  <div class="glass-bg-orb orb-2"></div>
+
+  <div class="app-card">
+    <header>
+      <h1>Color Palette Generator</h1>
+      <p>Generate shades, lock favorites, and click hex codes to copy</p>
+    </header>
+
+    <div class="controls-bar">
+      <button id="generate-btn">⚡ Generate Palette</button>
+      <button class="btn-secondary" id="space-hint-btn">Press Spacebar</button>
+    </div>
+
+    <div class="palette-container" id="palette-container">
+      <!-- Dynamic Palette Cards rendered via JS -->
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
